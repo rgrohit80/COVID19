@@ -1,3 +1,7 @@
+"""
+A notification system for COVID-19 (Coronavirus) status
+"""
+
 from plyer import notification
 import requests
 from bs4 import BeautifulSoup
@@ -11,6 +15,7 @@ def notifyMe(title, message):
         app_icon="C:/Users/Rohit/tutorial/covid/icon.ico",
         timeout=10
     )
+
 
 def getData(url):
     r = requests.get(url)
