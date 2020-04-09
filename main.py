@@ -12,7 +12,7 @@ def notifyMe(title, message):
     notification.notify(
         title=title,
         message=message,
-        app_icon="C:/Users/Rohit/tutorial/covid/icon.ico",
+        app_icon="icon_path/icon.ico",
         timeout=10
     )
 
