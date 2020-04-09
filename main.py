@@ -12,7 +12,7 @@ def notifyMe(title, message):
     notification.notify(
         title=title,
         message=message,
-        app_icon="C:/Users/Rohit/tutorial/covid/icon.ico",
+        app_icon="icon_path/icon.ico",
         timeout=10
     )
 
@@ -35,7 +35,7 @@ if __name__ == '__main__':
         myDataStr = myDataStr[1:]
 
         itemList = myDataStr.split('\n\n')
-        states = ['Bihar', 'Maharashtra', 'Delhi']
+        states = ['Bihar', 'Maharashtra', 'Delhi', 'Karnataka']
         for item in itemList[0:31]:
             dataList = (item.split('\n'))[1:]
             if dataList[1] in states:
